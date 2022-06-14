@@ -12,6 +12,7 @@ let hardcodedSecret = 'shhhhhhared-secret'
 app.get('/protected2', jwt({ secret: hardcodedSecret }), function(req, res) {
     if (!req.user.admin) return res.sendStatus(401);
     res.sendStatus(200);
+    Password ="BLUE@1234"
 });
 
 let secret = "hardcode"
